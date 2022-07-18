@@ -1,0 +1,41 @@
+@media only screen and (max-width: 600px) {
+    .w-topnav {
+        display: none !important;
+    }
+    .w-image {
+        max-width:100%;
+        padding: 8px 4px;
+        height: 200px;
+    }
+    }
+    
+    
+    @media only screen and (max-width: 768px) {
+        .w-topnav {
+            display: none !important;
+        }
+        .w-image {
+            max-width:100%;
+            padding: 12px 6px;
+            height:250px;
+        }
+    }
+
+
+    @media only screen and (min-width:769px) {
+        .w-sidenav {
+            display:none !important;
+        }
+        .w-image {
+            max-width:100%;
+            height:300px;
+            padding: 16px 8px;
+        }
+    }
+
+    .w-bar-block .w-bar-item {
+        margin-bottom: 20px !important;
+    }
+    .main .w-image {
+        background: url("images/learn.jpeg") no-repeat fixed center;
+    }
