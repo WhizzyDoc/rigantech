@@ -1,0 +1,56 @@
+@media only screen and (max-width: 600px) {
+    .main, #main {
+        display:flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+    }
+    .w-image {
+        width:100% !important;
+        padding: 8px 4px;
+        height: 200px;
+    }
+    .w-image {
+        margin: 10px;
+    }
+    .tutorial {
+        font-size:20px;
+    }
+    }
+    
+    
+    @media only screen and (max-width: 768px) {
+        .w-image {
+            max-width:100%;
+            padding: 12px 6px;
+            height:250px;
+        }
+        .w-image {
+            margin: 20px;
+        }
+        .tutorial {
+            font-size:35px;
+        }
+    }
+
+
+    @media only screen and (min-width:769px) {
+        .w-image {
+            max-width:100%;
+            height:300px;
+            padding: 16px 8px;
+        }
+        .w-image {
+            margin: 20px;
+        }
+        .tutorial {
+            font-size:45px;
+        }
+    }
+    .w-image .fade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
