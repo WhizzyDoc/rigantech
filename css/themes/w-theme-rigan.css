@@ -5,17 +5,25 @@
 footer {
     min-height: 100px;
 }
-.action {
-    padding:10px 20px;
+.action, .tutorial {
+    padding:10px;
     outline:none;
     border: 2px solid white;
 }
+.tutorial {
+    background: rgba(0, 0, 0, 0.3);
+    color:white;
+}
+.tutorial:hover {
+    color:#fff !important;
+    background-color:#8AC007 !important
+}
 .w-image {
-    width:100%;
+    max-width:100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: auto;
     padding: 0px !important;
     margin-bottom: 20px;
 }
@@ -31,15 +39,53 @@ footer {
 .w-image.w-image-4 {
     background-image: url("images/3d.jpeg");
 }
+.w-image.w-image-5 {
+    background-image: url("images/webdev.jpg");
+}
+.w-image.w-tut-1 {
+    background: url("images/html.png");
+}
+.w-image.w-tut-2 {
+    background: url("images/css.png");
+}
+.w-image.w-tut-3 {
+    background: url("images/js.png");
+}
+.w-image.w-tut-4 {
+    background: url("images/python.png");
+}
+.w-image.w-tut-5 {
+    background: url("images/php.jpeg");
+}
+.w-image.w-tut-6 {
+    background: url("images/java.png");
+}
+.w-image.w-tut-7 {
+    background: url("images/wordpress.png");
+}
+.w-image.w-tut-8 {
+    background: url("images/linux.png");
+}
+.w-image.w-tut-9 {
+    background: url("images/bootstrap.png");
+}
+.w-image.w-tut-10 {
+    background: url("images/react.png");
+}
+.w-image.w-tut-11 {
+    background: url("images/django.png");
+}
+.w-image.w-tut-12 {
+    background: url("images/sql.jpeg");
+}
 .w-image .fade {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
     color:white;
-    padding:50px 20px 10px 20px;
+    padding:40px 20px 10px 20px;
 }
-
 .w-btn, .w-btn:link, .w-btn:visited {
     background-color: #8AC007;
     outline:none;
@@ -76,10 +122,10 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .fade h1{
-        font-size:18px;
+        font-size:18px !important;
     }
     .action {
-        font-size:15px;
+        font-size:15px !important;
     }
     .w-image {
         min-height: 250px;
@@ -155,6 +201,7 @@ header, footer {
     .w-image {
         height: 550px;
     }
+
     #footer2 {
         display: none;
     }
