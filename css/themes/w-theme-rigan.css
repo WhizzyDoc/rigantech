@@ -23,7 +23,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
-    background-size: auto;
+    background-size: 100% 100%;
     padding: 0px !important;
     margin-bottom: 20px;
 }
@@ -41,6 +41,15 @@ footer {
 }
 .w-image.w-image-5 {
     background-image: url("images/webdev.jpg");
+}
+.w-image.w-image-6 {
+    background-image: url("images/data1.jpeg");
+}
+.w-image.w-image-7 {
+    background-image: url("images/ai1.jpeg");
+}
+.w-image.w-image-8 {
+    background-image: url("images/hack1.jpeg");
 }
 .w-image.w-tut-1 {
     background: url("images/html.png");
@@ -77,6 +86,39 @@ footer {
 }
 .w-image.w-tut-12 {
     background: url("images/sql.jpeg");
+}
+.w-image.w-tut-13 {
+    background: url("images/c.png");
+}
+.w-image.w-tut-14 {
+    background: url("images/c++.png");
+}
+.w-image.w-tut-15 {
+    background: url("images/node.png");
+}
+.w-image.w-tut-16 {
+    background: url("images/xml.jpeg");
+}
+.w-image.w-tut-17 {
+    background: url("images/ruby.png");
+}
+.w-image.w-tut-18 {
+    background: url("images/perl.png");
+}
+.w-image.w-tut-19 {
+    background: url("images/data2.jpeg");
+}
+.w-image.w-tut-20 {
+    background: url("images/ai2.jpeg");
+}
+.w-image.w-tut-21 {
+    background: url("images/hack2.jpeg");
+}
+.w-image.w-tut-22 {
+    background: url("images/w.png");
+}
+.w-image.w-tut-23 {
+    background: url("images/angular.png");
 }
 .w-image .fade {
     width: 100%;
