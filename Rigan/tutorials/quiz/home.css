@@ -1,0 +1,96 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #007bff;
+    width:100%;
+    height:100%;
+}
+.title {
+  position: relative;
+  margin: 40px auto;
+  width:100%;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 3s;
+    animation-name: animatebottom;
+    animation-duration: 3s;
+}
+@-webkit-keyframes animatebottom {
+    from {
+        top: 60px;
+        opacity: 40px;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes animatebottom {
+    from {
+        top: 60px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+.container {
+  display: flex;
+  position: relative;
+  margin: 50px auto;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+   -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 3s;
+    animation-name: animatebottom;
+    animation-duration: 3s;
+}
+.container .content {
+  width: 100px;
+  padding: 5px;
+  height: 170px;
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+#container {
+  display: none;
+}
+.img {
+  position: relative;
+  width: 100%;
+  height:100px;
+}
+.img img {
+  width:100%;
+  height:100%;
+}
+button {
+  width:100%;
+  position:relative;
+  height:50px;
+  background: #007bff;
+  border: 2px solid blue;
+  border-radius: 5px;
+  color: white;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
