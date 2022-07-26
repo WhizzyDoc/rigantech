@@ -6,6 +6,9 @@
     .head {
         font-size: 20px !important;
     }
+    .contact a {
+        font-size: 30px !important;
+    }
 }
  @media only screen and (max-width: 768px) {
     #dp {
@@ -15,6 +18,9 @@
     .head {
         font-size: 36px !important;
     }
+    .contact a {
+        font-size: 40px !important;
+    }
  }
  @media only screen and (min-width: 769px) {
     #dp {
@@ -23,6 +29,9 @@
     }
     .head {
         font-size: 48px !important;
+    }
+    .contact a {
+        font-size: 50px !important;
     }
  }
 
@@ -36,7 +45,7 @@
     font-family: 'sans-serif', Courier New, Courier, monospace;
     font-weight: 600;
 }
-.profile div {
+.profile > div {
     position: relative;
     width: 100%;
     min-height:100px;
@@ -63,4 +72,21 @@
     width: 100%;
     height: auto;
     border-radius: 50%;
+}
+.contact {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    position:relative;
+    justify-content:space-around;
+    align-items:center;
+}
+.contact > div {
+    padding:10px;
+    display: inline-block;
+}
+.contact a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
