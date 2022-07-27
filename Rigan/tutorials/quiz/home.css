@@ -22,9 +22,9 @@ body{
   font-size: 30px;
   color: #fff;
   -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
     animation-name: animatebottom;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @-webkit-keyframes animatebottom {
     from {
