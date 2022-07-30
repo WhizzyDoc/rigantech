@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Introduction to HTML</title>
+<title>HTML Tags and Elements</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Rigan Tech">
 <meta name="description" content="A website to learn all about programming">
@@ -39,9 +39,9 @@
 <div class="w-sidenav w-animate-left w-bar-block w-center w-theme-d1 col-l-3" id="w-sidenav">
   <div class="w-closenav h1 w-theme-d1 w-text-black w-hover-text-red" id="w-closenav">&times;</div>
   <div class="w-bar-item w-btn w-theme-l1 w-margin-bottom">HTML4</div>
-  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-1.html">Introduction to HTML</a></div>
+  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-1.html">Introduction to HTML</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-2.html">HTML Editors</a></div>
-  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-3.html">HTML Tags & Elements</a></div>
+  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-3.html">HTML Tags & Elements</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="#">HTML Headings & Paragraphs</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="#">HTML Text Formatting</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="#">HTML Attributes</a></div>
@@ -74,103 +74,96 @@
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="#">HTML Iframes</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="#">HTML YouTube Videos</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="#">HTML File Paths</a></div>
-  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="../quiz/html.html">HTML Quiz</a></div>
+  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="../quiz/html.html" target="_blank">HTML Quiz</a></div>
   <div class="w-bar-item w-btn w-theme-l1 w-margin-bottom w-margin-top">HTML5</div>
 
 </div>
 <div id="main" class="w-animate-right w-main w-theme-l4 col-sm-12 col-md-12 col-l-9">
    
   <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-    <a href="../../pages/tutorial.html"><button class="prev">&lt;&lt; Home</button></a>
-    <a href="html-2.html"><button class="next">Next &gt;&gt;</button></a>
+    <a href="html-2.html"><button class="prev">&lt;&lt; Previous</button></a>
+    <a href="html-4.html"><button class="next">Next &gt;&gt;</button></a>
     </div>
+
     <div class="note">
-        <h2 style="font-weight:500;">What is HTML?</h2>
-        <p>HTML stands for <b>Hyper Text Markup Language</b>, it is easy and fun to learn. HTML describes the structure and content of web pages. HTML5 is the fifth and current major version of the HTML standard</p>
-        <h2 style="font-weight:500;">Why learn HTML?</h2>
-        <p>It is essential to learn HTML if you want to build websites. You cant build one if you dont know HTML because it's one of the prerequisites in learning other languages used for web development.</p>
-        <h2 style="font-weight:500;">Try it Yourself</h2>
-        <p>For you to learn faster and see how our examples would actually look like similarly on a real browser, we have implemented a simple Try it Yourself Editor with syntax hightlighting where you can play and experiment with the example code given.</p>
+      <h2 style="font-weight:500;">HTML Elements</h2>
+      <p>In the first lesson we have studied about tags and things like start tag and end tag.</p>
+      <p>An HTML element is usually composed of a &quot;Start Tag&quot;, &quot;Element Content&quot; and an &quot;End Tag&quot;.</p>
+    </div>
+      <h3>Example:</h3>
+      <div class="html">
+          <code>
+            <span class="tag">&lt;h1&gt;</span>This is a heading element<span class="tag">&lt;/h1&gt;</span><br>
+            <span class="tag">&lt;p&gt;</span>This is a paragraph element<span class="tag">&lt;/p&gt;</span><br>
+          </code>
+      </div>
+      <br>
+      
+      <h3>Output:</h3>
+      <div class="output">
+          <h1>This is a heading element</h1>
+          <p>This is a paragraph element</p>
+      </div>
+      <br>
+      
+      <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
+
+      <div class="note w-section">
+        <h2 style="font-weight:500;">Nested HTML Elements</h2>
+        <p>There are some cases that an HTML element can contain one or more HTML elements.</p>
+        <p>For you to better understand it, look at the example code below</p>
       </div>
         <h3>Example:</h3>
         <div class="html">
             <code>
-              <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
-              <span class="tag">&lt;html <span class="attr">lang <span class="value">=&quot;en&quot;</span></span>&gt;</span><br>
-              &nbsp;<span class="tag">&lt;head&gt;</span><br>
-              &nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>Hello World!<span class="tag">&lt;/title&gt;</span><br>
-              &nbsp;<span class="tag">&lt;/head&gt;</span><br>
-              &nbsp;<span class="tag">&lt;body&gt;</span><br>
-              &nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span>This is a heading<span class="tag">&lt;/h1&gt;</span><br>
-              &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>This is a paragraph<span class="tag">&lt;/p&gt;</span><br>
-              &nbsp;<span class="tag">&lt;/body&gt;</span><br>
-              <span class="tag">&lt;/html&gt;</span><br>
+              <span class="tag">&lt;p&gt;</span><span class="tag">&lt;i&gt;</span>Italicized text<span class="tag">&lt;i&gt;</span><span class="tag">&lt;/p&gt;</span><br>
             </code>
         </div>
         <br>
         
         <h3>Output:</h3>
         <div class="output">
-            <h1>This is a heading</h1>
-            <p>This is a paragraph</p>
+            <p><i>Italicized text</i></p>
         </div>
         <br>
         
         <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
 
-        <div class="note w-section">
-          <h3>Explanation</h3>
-          <ul>
-            <li><span class="code-h"><code>&lt;!DOCTYPE html&gt;</code></span>: this declares the document type which is HTML5</li>
-            <li><span class="code-h"><code>&lt;html&gt;</code></span>: this element encloses everything inside of an html document; it includes tags, elements, style sheets, scripts, text, multimedia and a lot more</li>
-            <li><span class="code-h"><code>&lt;lang =&quot;en&quot;&gt;</code></span>: this defines the language of the document as  English</li>
-            <li><span class="code-h"><code>&lt;head&gt;</code></span>: this element encloses the metadata of a document which will not be displayed on the main content of a webpage; this could include style sheets, scripts, <span class="code-h"><code>&lt;title&gt;</code></span>, <span class="code-h"><code>&lt;meta&gt;</code></span> tags and a lot more</li>
-            <li><span class="code-h"><code>&lt;title&gt;</code></span>: this element defines the title of a webpage; it appears on the upper part of a browser</li>
-            <li><span class="code-h"><code>&lt;body&gt;</code></span>: this element encloses elements like <span class="code-h"><code>&lt;h1&gt;</code></span>, <span class="code-h"><code>&lt;p&gt;</code></span>, <span class="code-h"><code>&lt;img&gt;</code></span>, <span class="code-h"><code>&lt;input&gt;</code></span>, <span class="code-h"><code>&lt;table&gt;</code></span> and a lot more</li>
-            <li><span class="code-h"><code>&lt;h1&gt;</code></span>: this element defines a heading</li>
-            <li><span class="code-h"><code>&lt;p&gt;</code></span>: this element defines a paragraph</li>
-          </ul>
-          <h2 style="font-weight:500">HTML Tags</h2>
-          <p>HTML Tags are element names surrounded by angle brackets.</p>
-          <p>In HTML, we start and end tags. Look at the example below.</p>  
-        </div>
-        <h3>Example:</h3>
-        <div class="html">
-          <code>
-            <span class="tag">&lt;p&gt;</span>Hello, This is HTML Tags<span class="tag">&lt;/p&gt;</span>
-          </code>
-        </div>
-        <br>
-        <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
+      <div class="note w-section">
+        <p>The example nested HTML Elements above are composed of the following:</p>
+        <ul>
+          <li>Start tag <span class="code-h"><code>&lt;p&gt;</code></span></li>
+          <li>Start tag <span class="code-h"><code>&lt;i&gt;</code></span></li>
+          <li>Element Content <span class="code-h"><code>Italicized text</code></span></li>
+          <li>End tag <span class="code-h"><code>&lt;/i&gt;</code></span></li>
+          <li>End tag <span class="code-h"><code>&lt;/p&gt;</code></span></li>
+        </ul>
+        <p>On the example above, there are two start tags and two end tags.</p>
+        <p>The secomd tag i.e <span class="code-h"><code>&lt;i&gt;</code></span> italicizes the text within</p>
+        <h3 style="font-weight:500;">Empty Elements</h3>
+        <p>Empty Elements are elements that do not have an element content and an end tag.</p>
+        <p>A list of commonly used Empty Elements:</p>
+        <ul>
+          <li><span class="code-h"><code>&lt;meta /&gt;</code></span></li>
+          <li><span class="code-h"><code>&lt;link /&gt;</code></span></li>
+          <li><span class="code-h"><code>&lt;img /&gt;</code></span></li>
+          <li><span class="code-h"><code>&lt;br /&gt;</code></span></li>
+          <li><span class="code-h"><code>&lt;hr /&gt;</code></span></li>
+          <li><span class="code-h"><code>&lt;input /&gt;</code></span></li>
+        </ul>
+        <p>The best practice in HTML Empty Elements is to always put a forward slash <span class="code-h"><code>/</code></span> sign before the greater than <span class="code-h"><code>&gt;</code></span>  sign.</p>
+        <p>In this way, they are closed at their start tag</p>
+        <h3 style="font-weight:500;">HTML Is Not Case Sensitive</h3>
+        <p>HTML tags are not case sensitive. That is, <span class="code-h"><code>&lt;p&gt;</code></span> is the same as <span class="code-h"><code>&lt;P&gt;</code></span></p>
+      </div>
 
-        <div class="note w-section">
-          <h2 style="font-weight:500">Start Tag and End Tag</h2>
-          <ul>
-            <li>Start tag - also called &quot;opening a tag&quot;. Example: <span class="code-h"><code>&lt;p&gt;</code></span></li>
-            <li>End tag - also called &quot;ending a tag&quot;. Example: <span class="code-h"><code>&lt;/p&gt;</code></span></li>
-          </ul>
-          <p>This is the basic structure of any HTML page. Memorize them!</p>
-        </div>
-        <div class="html">
-          <code>
-            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
-            <span class="tag">&lt;html <span class="attr">lang <span class="value">=&quot;en&quot;</span></span>&gt;</span><br>
-            &nbsp;<span class="tag">&lt;head&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>The Title<span class="tag">&lt;/title&gt;</span><br>
-            &nbsp;<span class="tag">&lt;/head&gt;</span><br>
-            &nbsp;<span class="tag">&lt;body&gt;</span><br>
-            <br><br>
-            &nbsp;<span class="tag">&lt;/body&gt;</span><br>
-            <span class="tag">&lt;/html&gt;</span><br>
-          </code>
-        </div>
-        <br>
-        <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
+      <br>
+      <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
         
         <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-          <a href="../../pages/tutorial.html"><button class="prev">&lt;&lt; Home</button></a>
-          <a href="html-2.html"><button class="next">Next &gt;&gt;</button></a>
-        </div>
+          <a href="html-2.html"><button class="prev">&lt;&lt; Previous</button></a>
+          <a href="html-4.html"><button class="next">Next &gt;&gt;</button></a>
+          </div>
 
 
         <footer class="w-theme-l2 col-sm-12 col-md-12 col-l-12">
