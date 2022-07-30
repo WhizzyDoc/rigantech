@@ -137,7 +137,7 @@ footer {
 }
 .w-code {border-left: 4px solid #8AC007 !important;}
 .w-sidenav h2 {color: #8AC007;font-size:20px;margin-left: 16px;}
-.w-topnav {font-size: 20px;}
+.w-topnav {font-size: 17px;}
 .w-topnav a {
     outline:none;
 }
@@ -196,8 +196,8 @@ header, footer {
     font-size: 20px;
 }
 .w-bar .w-bar-item, .w-bar .w-bar-item.h1 {
-    padding:4px 6px !important;
-    font-size: 20px !important;
+    padding:2px !important;
+    font-size: 17px !important;
 }
 }
 
