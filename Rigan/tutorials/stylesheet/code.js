@@ -7,3 +7,4 @@ function runCode() {
     output.innerHTML = html.value;
     document.getElementById("style").innerHTML = css.value;
 }
+

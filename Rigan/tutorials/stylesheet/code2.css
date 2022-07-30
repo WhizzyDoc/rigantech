@@ -16,7 +16,7 @@
                 border: none;
                 width: 100%;
                 color: black;
-                padding-bottom: 20px;
+                padding: 10px;
             }
             
             .tag, .sel {
@@ -38,4 +38,12 @@ button {
     font-size: 20px !important;
     outline: none;
     margin: 20px;
+}
+.code-h {
+    color:red;
+    background:rgb(0, 0, 0, 0.1);
+}
+.note {
+    background:white;
+    padding:10px;
 }
