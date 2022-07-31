@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Tags and Elements</title>
+<title>HTML Text Formatting</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Rigan Tech">
 <meta name="description" content="A website to learn all about programming">
@@ -41,9 +41,9 @@
   <div class="w-bar-item w-btn w-theme-l1 w-margin-bottom">HTML4</div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-1.html">Introduction to HTML</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-2.html">HTML Editors</a></div>
-  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-3.html">HTML Tags & Elements</a></div>
+  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-3.html">HTML Tags & Elements</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-4.html">HTML Headings & Paragraphs</a></div>
-  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-5.html">HTML Text Formatting</a></div>
+  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-5.html">HTML Text Formatting</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-6.html">HTML Attributes</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-7.html">HTML Comments</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-8.html">HTML Colors</a></div>
@@ -81,88 +81,81 @@
 <div id="main" class="w-animate-right w-main w-theme-l4 col-sm-12 col-md-12 col-l-9">
    
   <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-    <a href="html-2.html"><button class="prev">&lt;&lt; Previous</button></a>
-    <a href="html-4.html"><button class="next">Next &gt;&gt;</button></a>
+    <a href="html-4.html"><button class="prev">&lt;&lt; Previous</button></a>
+    <a href="html-6.html"><button class="next">Next &gt;&gt;</button></a>
     </div>
 
     <div class="note">
-      <h2 style="font-weight:500;">HTML Elements</h2>
-      <p>In the first lesson we have studied about tags and things like start tag and end tag.</p>
-      <p>An HTML element is usually composed of a &quot;Start Tag&quot;, &quot;Element Content&quot; and an &quot;End Tag&quot;.</p>
+      <h2 style="font-weight:500;">HTML Text Formatting</h2>
+      <p>Formatting text is very essential for web sites.</p>
+      <p>One of its uses is to help readers know the important parts of a wb content easily.</p>
+      <h2 style="font-weight:500;">Elements for Formatting Text</h2>
+      <p>All of the elements listed below are <a href="html-12.html">inline elements</a>.</p>
+      <ul>
+        <li><span class="code-h"><code>&lt;b&gt;</code></span>: bolds at text</li>
+        <li><span class="code-h"><code>&lt;i&gt;</code></span>: italicizes a text</li>
+        <li><span class="code-h"><code>&lt;u&gt;</code></span>: underlines a text</li>
+        <li><span class="code-h"><code>&lt;code&gt;</code></span>: defines a text as a code</li>
+        <li><span class="code-h"><code>&lt;tt&gt;</code></span>: typewriter text</li>
+        <li><span class="code-h"><code>&lt;small&gt;</code></span>: makes a text smaller</li>
+        <li><span class="code-h"><code>&lt;big&gt;</code></span>: makes a text bigger</li>
+        <li><span class="code-h"><code>&lt;em&gt;</code></span>: emphasizes a text, may be italicized, depending on the browser</li>
+        <li><span class="code-h"><code>&lt;strong&gt;</code></span>: emphasizes a text, may be boldened depending on the browser</li>
+        <li><span class="code-h"><code>&lt;mark&gt;</code></span>: marks a text like a highlighting pen</li>
+        <li><span class="code-h"><code>&lt;q&gt;</code></span>: enquotes a text</li>
+        <li><span class="code-h"><code>&lt;s&gt;</code></span>: strikes through a text</li>
+        <li><span class="code-h"><code>&lt;sup&gt;</code></span>: converts text to superscript</li>
+        <li><span class="code-h"><code>&lt;sub&gt;</code></span>: converts text to subscript</li>
+      </ul>
     </div>
       <h3>Example:</h3>
       <div class="html">
           <code>
-            <span class="tag">&lt;h1&gt;</span>This is a heading element<span class="tag">&lt;/h1&gt;</span><br>
-            <span class="tag">&lt;p&gt;</span>This is a paragraph element<span class="tag">&lt;/p&gt;</span><br>
+            <span class="tag">&lt;b&gt;</span>I am a boldened text<span class="tag">&lt;/b&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;i&gt;</span>I am an italicized text<span class="tag">&lt;/i&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;u&gt;</span>I am an underlined text<span class="tag">&lt;/u&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;code&gt;</span>I am a code text<span class="tag">&lt;/code&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;tt&gt;</span>I am a typewriter text<span class="tag">&lt;/tt&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;small&gt;</span>I am a smaller text<span class="tag">&lt;/small&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;big&gt;</span>I am a bigger text<span class="tag">&lt;/big&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;em&gt;</span>I am an emphasized text<span class="tag">&lt;/em&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;strong&gt;</span>I am a strong text<span class="tag">&lt;/strong&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;mark&gt;</span>I am a marked text<span class="tag">&lt;/mark&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;q&gt;</span>I am an enquoted text<span class="tag">&lt;/q&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;s&gt;</span>I am a striked text<span class="tag">&lt;/s&gt;</span> <span class="tag">&lt;br /&gt;</span><br>
+            I am a <span class="tag">&lt;sup&gt;</span>superscript<span class="tag">&lt;/sup&gt;</span> text <span class="tag">&lt;br /&gt;</span><br>
+            I am a <span class="tag">&lt;sub&gt;</span>subscript<span class="tag">&lt;/sub&gt;</span> text <span class="tag">&lt;br /&gt;</span><br>
+            <span class="tag">&lt;b&gt;</span><span class="tag">&lt;i&gt;</span><span class="tag">&lt;u&gt;</span><span class="tag">&lt;mark&gt;</span><span class="tag">&lt;q&gt;</span>I am a mixed formatted text<span class="tag">&lt;/q&gt;</span><span class="tag">&lt;/mark&gt;</span><span class="tag">&lt;/u&gt;</span><span class="tag">&lt;/i&gt;</span><span class="tag">&lt;/b&gt;</span>
           </code>
       </div>
       <br>
       
       <h3>Output:</h3>
       <div class="output">
-          <h1>This is a heading element</h1>
-          <p>This is a paragraph element</p>
+          <b>I am a boldened text</b><br>
+          <i>I am an italicized text</i><br>
+          <u>I am an underlined text</u><br>
+          <code>I am a code text</code><br>
+          <tt>I am a typewriter text</tt><br>
+          <small>I am a smaller text</small><br>
+          <big>I am a bigger text</big><br>
+          <em>I am an emphasized text</em><br>
+          <strong>I am a strong text</strong><br>
+          <mark>I am a marked text</mark><br>
+          <q>I am an enquoted text</q><br>
+          <s>I am a striked text</s><br>
+          I am a <sup>superscript</sup> text<br>
+          I am a <sub>subscript</sub> text<br>
+          <b><i><u><mark><q>I am a mixed formatted text</q></mark></u></i></b>
       </div>
-      <br>
-      
-      <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
-
-      <div class="note w-section">
-        <h2 style="font-weight:500;">Nested HTML Elements</h2>
-        <p>There are some cases that an HTML element can contain one or more HTML elements.</p>
-        <p>For you to better understand it, look at the example code below</p>
-      </div>
-        <h3>Example:</h3>
-        <div class="html">
-            <code>
-              <span class="tag">&lt;p&gt;</span><span class="tag">&lt;i&gt;</span>Italicized text<span class="tag">&lt;i&gt;</span><span class="tag">&lt;/p&gt;</span><br>
-            </code>
-        </div>
-        <br>
-        
-        <h3>Output:</h3>
-        <div class="output">
-            <p><i>Italicized text</i></p>
-        </div>
-        <br>
+        <br><br>
         
         <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
-
-      <div class="note w-section">
-        <p>The example nested HTML Elements above are composed of the following:</p>
-        <ul>
-          <li>Start tag <span class="code-h"><code>&lt;p&gt;</code></span></li>
-          <li>Start tag <span class="code-h"><code>&lt;i&gt;</code></span></li>
-          <li>Element Content <span class="code-h"><code>Italicized text</code></span></li>
-          <li>End tag <span class="code-h"><code>&lt;/i&gt;</code></span></li>
-          <li>End tag <span class="code-h"><code>&lt;/p&gt;</code></span></li>
-        </ul>
-        <p>On the example above, there are two start tags and two end tags.</p>
-        <p>The secomd tag i.e <span class="code-h"><code>&lt;i&gt;</code></span> italicizes the text within</p>
-        <h3 style="font-weight:500;">Empty Elements</h3>
-        <p>Empty Elements are elements that do not have an element content and an end tag.</p>
-        <p>A list of commonly used Empty Elements:</p>
-        <ul>
-          <li><span class="code-h"><code>&lt;meta /&gt;</code></span>: Used to define meta data in the head tag</li>
-          <li><span class="code-h"><code>&lt;link /&gt;</code></span>: used for linking stylesheets to an HTML</li>
-          <li><span class="code-h"><code>&lt;img /&gt;</code></span>: used to define an image elment</li>
-          <li><span class="code-h"><code>&lt;br /&gt;</code></span>: used to create a line break especially for inline elements</li>
-          <li><span class="code-h"><code>&lt;hr /&gt;</code></span>: used to create an horizontal line</li>
-          <li><span class="code-h"><code>&lt;input /&gt;</code></span>: used to create/define form input fields</li>
-        </ul>
-        <p>The best practice in HTML Empty Elements is to always put a forward slash <span class="code-h"><code>/</code></span> sign before the greater than <span class="code-h"><code>&gt;</code></span>  sign.</p>
-        <p>In this way, they are closed at their start tag</p>
-        <h3 style="font-weight:500;">HTML Is Not Case Sensitive</h3>
-        <p>HTML tags are not case sensitive. That is, <span class="code-h"><code>&lt;p&gt;</code></span> is the same as <span class="code-h"><code>&lt;P&gt;</code></span></p>
-      </div>
-
-      <br>
       <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
         
         <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-          <a href="html-2.html"><button class="prev">&lt;&lt; Previous</button></a>
-          <a href="html-4.html"><button class="next">Next &gt;&gt;</button></a>
+          <a href="html-4.html"><button class="prev">&lt;&lt; Previous</button></a>
+          <a href="html-6.html"><button class="next">Next &gt;&gt;</button></a>
           </div>
 
 
