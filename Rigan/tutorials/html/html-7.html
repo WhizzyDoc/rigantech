@@ -86,45 +86,45 @@
     </div>
 
     <div class="note">
-      <h2 style="font-weight:500;">HTML Text Formatting</h2>
-      <p>Formatting text is very essential for web sites.</p>
-      <p>One of its uses is to help readers know the important parts of a wb content easily.</p>
-      <h2 style="font-weight:500;">Elements for Formatting Text</h2>
-      <p>All of the elements listed below are <a href="html-12.html">inline elements</a>.</p>
-      <ul>
-        <li><span class="code-h"><code>&lt;b&gt;</code></span>: bolds at text</li>
-        <li><span class="code-h"><code>&lt;i&gt;</code></span>: italicizes a text</li>
-        <li><span class="code-h"><code>&lt;u&gt;</code></span>: underlines a text</li>
-        <li><span class="code-h"><code>&lt;code&gt;</code></span>: defines a text as a code</li>
-        <li><span class="code-h"><code>&lt;tt&gt;</code></span>: typewriter text</li>
-        <li><span class="code-h"><code>&lt;small&gt;</code></span>: makes a text smaller</li>
-        <li><span class="code-h"><code>&lt;big&gt;</code></span>: makes a text bigger</li>
-        <li><span class="code-h"><code>&lt;em&gt;</code></span>: emphasizes a text, may be italicized, depending on the browser</li>
-        <li><span class="code-h"><code>&lt;strong&gt;</code></span>: emphasizes a text, may be boldened depending on the browser</li>
-        <li><span class="code-h"><code>&lt;mark&gt;</code></span>: marks a text like a highlighting pen</li>
-        <li><span class="code-h"><code>&lt;q&gt;</code></span>: enquotes a text</li>
-        <li><span class="code-h"><code>&lt;s&gt;</code></span>: strikes through a text</li>
-        <li><span class="code-h"><code>&lt;sup&gt;</code></span>: converts text to superscript</li>
-        <li><span class="code-h"><code>&lt;sub&gt;</code></span>: converts text to subscript</li>
-      </ul>
+      <h2 style="font-weight:500;">HTML Comments</h2>
+      <p>HTML comments are text, phrases or sentences inside an HTML file.</p>
+      <p>They are only shown in codes and not rendered by a browser.</p>
+      <h2 style="font-weight:500;">Why use HTML Comments?</h2>
+      <p>HTML comments help both beginners and experienced web developers to easily organize their codes.</p>
+      <p>They act like sticky notes/explanations in HTML files.</p>
+      <h2 style="font-weight:500;">How to write HTML Comments</h2>
+      <p>An HTML Comment starts with <span class="code-h"><code>&lt;!--</code></span> and end with <span class="code-h"><code>--&gt;</code></span>.</p>
+      <p>It looks like this:</p>
+      <p><span class="comm">&lt;!-- comments go here --&gt;</span></p>
     </div>
       <h3>Example:</h3>
       <div class="html">
           <code>
-            <span class="tag">&lt;html <span class="attr">lang</span>=<span class="value">&quot;en-US&quot;</span> &gt;</span><br>
-            <span class="comm">&lt;!-- html document/file content goes here --&gt;</span><br>
-            <span>...</span><br>
-            <span class="tag">&lt;/html&gt;</span>
+            <span class="tag">&lt;p&gt;</span><br>
+            &nbsp;&nbsp;<span>This shows on browser</span><br>
+            &nbsp;&nbsp;<span class="comm">&lt;!-- single line comment, can also break into multiple lines (does not show in browser) --&gt;</span><br>
+            <span class="tag">&lt;/p&gt;</span><br><br>
+            <span class="tag">&lt;div&gt;</span> <span class="comm">&lt;!-- comments can be used beside tags and elements --&gt;</span><br>
+            &nbsp;&nbsp;<span>This also shows on browser</span><br>  
+            <span class="tag">&lt;/div&gt;</span>
           </code>
       </div>
       <br>
       
       <h3>Output:</h3>
       <div class="output">
-          
+          <p>This shows on browser</p>
+          <div>This also shows on browser</div>
+      </div><br>
+      <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a><br>
+
+      <div class="note w-section">
+        <p>On the example given above, you have learned that you can make a single line and multi line HTML comments.</p>
+        <p>And if you noticed, we also put comments beside a tag.</p>
+        <p>That is for us to easily understamnd that comments can be used anywhere in an HTML document.</p>
       </div>
-        <br><br>
-        
+
+        <br>
         <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
       <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
         
