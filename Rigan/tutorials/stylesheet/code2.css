@@ -18,6 +18,9 @@
                 color: black;
                 padding: 10px;
             }
+            .output a {
+                color:blue;
+            }
             
             .tag, .sel {
             color: brown;
@@ -30,6 +33,9 @@
             .value {
             color: blue;
             }
+            .comm {
+                color: grey;
+            }
 button {
     padding:10px 20px;
     background: green;
@@ -41,7 +47,7 @@ button {
 }
 .code-h {
     color:red;
-    background:rgb(0, 0, 0, 0.1);
+    background:rgb(0, 0, 0, 0.05);
 }
 .note {
     background:white;
