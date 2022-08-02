@@ -53,3 +53,22 @@ button {
     background:white;
     padding:10px;
 }
+table {
+    width: 100%;
+    background: white;
+    color: black;
+}
+th, td {
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid grey;
+    border-spacing:0px;
+}
+td, th {
+    padding: 5px;
+}
+#color {
+    width: 100px;
+    height: 50px;
+}
