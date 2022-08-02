@@ -10,7 +10,7 @@ function runCode() {
     document.getElementById("style").innerHTML = css.value;
 }
 
-function hexToRgb() {
+function hexToRgb(color) {
     let Color = color.value;
     let x = [];
     color = Color.replace('#', '')
