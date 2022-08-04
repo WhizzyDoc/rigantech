@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Headings and Paragraph</title>
+<title>HTML Responsive</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Rigan Tech">
 <meta name="description" content="A website to learn all about programming">
@@ -42,12 +42,12 @@
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-1.html">Introduction to HTML</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-2.html">HTML Editors</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-3.html">HTML Tags & Elements</a></div>
-  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-4.html">HTML Headings & Paragraphs</a></div>
+  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-4.html">HTML Headings & Paragraphs</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-5.html">HTML Text Formatting</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-6.html">HTML Attributes</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-7.html">HTML Comments</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-8.html">HTML Colors</a></div>
-  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-9.html">HTML Responsive</a></div>
+  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-9.html">HTML Responsive</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-10.html">HTML Centered</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-11.html">HTML Styling</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-12.html">HTML Block & Inline Elements</a></div>
@@ -81,76 +81,44 @@
 <div id="main" class="w-animate-right w-main w-theme-l4 col-sm-12 col-md-12 col-l-9">
    
   <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-    <a href="html-3.html"><button class="prev">&lt;&lt; Previous</button></a>
-    <a href="html-5.html"><button class="next">Next &gt;&gt;</button></a>
+    <a href="html-8.html"><button class="prev">&lt;&lt; Previous</button></a>
+    <a href="html-10.html"><button class="next">Next &gt;&gt;</button></a>
     </div>
 
     <div class="note">
-      <h2 style="font-weight:500;">HTML Headings</h2>
-      <p>HTML Headings are normally used for a title or a main topic of a certain content.</p>
-      <p>HTML Headings are <a href="html-12.html" style="color:blue;">block-level elements</a>.</p>
+      <h2 style="font-weight:500;">HTML Responsive</h2>
+      <p>To make an HTML page responsive, simply add this inside the <span class="code-h"><code>&lt;head&gt;</code></span> element.</p>
+      <p><span class="code-h"><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;</code></span></p>
+      <h2 style="font-weight:500;">Explanation:</h2>
+      <p>The <span class="code-h"><code>meta name=&quot;viewport&quot;</code></span> defines the name of the <a href="html-30.html" style="color:blue">Meta data</a> as <b>Viewport (the available display screen on a device)</b></p>
+      <p>The <span class="code-h"><code>content</code></span> defines the propeties/description for the <a href="html-30.html" style="color:blue">Meta data</a></p>
+      <p>The <span class="code-h"><code>width=device-width</code></span> sets the width of the webpage to conform to the width of the device</p>
+      <p>The <span class="code-h"><code>initial-scale=1</code></span> sets the initial size of webpage to original size</p>
     </div>
       <h3>Example:</h3>
       <div class="html">
           <code>
-            <span class="tag">&lt;h1&gt;</span>Heading 1<span class="tag">&lt;/h1&gt;</span><br>
-            <span class="tag">&lt;h2&gt;</span>Heading 2<span class="tag">&lt;/h2&gt;</span><br>
-            <span class="tag">&lt;h3&gt;</span>Heading 3<span class="tag">&lt;/h3&gt;</span><br>
-            <span class="tag">&lt;h4&gt;</span>Heading 4<span class="tag">&lt;/h4&gt;</span><br>
-            <span class="tag">&lt;h5&gt;</span>Heading 5<span class="tag">&lt;/h5&gt;</span><br>
-            <span class="tag">&lt;h6&gt;</span>Heading 6<span class="tag">&lt;/h6&gt;</span><br>
+            <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+              <span class="tag">&lt;html <span class="attr">lang <span class="value">=&quot;en&quot;</span></span>&gt;</span><br>
+              &nbsp;<span class="tag">&lt;head&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>Hello World!<span class="tag">&lt;/title&gt;</span><br>
+              &nbsp;&nbsp;<span class="tag">&lt;meta <span class="attr">name</span>=<span class="value">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="value">&quot;width=device-width, initial-scale=1&quot;</span> /&gt;<br>
+              &nbsp;<span class="tag">&lt;/head&gt;</span><br>
+              &nbsp;<span class="tag">&lt;body&gt;</span><br>
+              &nbsp;&nbsp;...<br>
+              &nbsp;&nbsp;...<br>
+              &nbsp;<span class="tag">&lt;/body&gt;</span><br>
+              <span class="tag">&lt;/html&gt;</span><br>
           </code>
       </div>
       <br>
       
-      <h3>Output:</h3>
-      <div class="output">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
-      </div>
-      <br>
-      
       <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
-
-      <div class="note w-section">
-        <p>As you can see on the example given above, the elements used are the <span class="code-h"><code>&lt;h1&gt;</code></span>, <span class="code-h"><code>&lt;h2&gt;</code></span>, <span class="code-h"><code>&lt;h3&gt;</code></span>, <span class="code-h"><code>&lt;h4&gt;</code></span>, <span class="code-h"><code>&lt;h5&gt;</code></span>, <span class="code-h"><code>&lt;h6&gt;</code></span>.</p>
-        <p>You should have noticed that the size of a heading depends on its corresponding number after the <span class="code-h"><code>h</code></span>.</p>
-        <p>And the lower the number, the larger the font-size.</p>
-        
-        <div class="w-padding-small w-pale-red">
-          <p><i class="fa fa-warning"></i> <b>Note!</b> You can only use tags from <span class="code-h"><code>&lt;h1&gt;</code></span> to <span class="code-h"><code>&lt;h6&gt;</code></span>.</p>
-        </div>
-      </div>
-      <div class="note w-section">
-        <h2 style="font-weight:500;">HTML Paragraph</h2>
-        <p>HTML Paragraphs are mainly used to group sentences.</p>
-        <p>The <span class="code-h"><code>&lt;p&gt;</code></span> element defines HTML Paragraph.</p>
-        <p>HTML Paragraphs are <a href="html-12.html">block-level elements</a>.</p>
-      </div>
-        <h3>Example:</h3>
-        <div class="html">
-            <code>
-              <span class="tag">&lt;p&gt;</span>This is an HTML Paragraph<span class="tag">&lt;/p&gt;</span><br>
-            </code>
-        </div>
-        <br>
-        
-        <h3>Output:</h3>
-        <div class="output">
-            <p>This is an HTML Paragraph</p>
-        </div>
-        <br><br>
-        
-        <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
       <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
         
         <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-          <a href="html-3.html"><button class="prev">&lt;&lt; Previous</button></a>
-          <a href="html-5.html"><button class="next">Next &gt;&gt;</button></a>
+          <a href="html-8.html"><button class="prev">&lt;&lt; Previous</button></a>
+          <a href="html-10.html"><button class="next">Next &gt;&gt;</button></a>
           </div>
 
 
