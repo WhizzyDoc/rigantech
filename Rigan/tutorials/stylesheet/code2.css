@@ -36,6 +36,9 @@
             .comm {
                 color: grey;
             }
+            .num {
+                color:green;
+            }
 button {
     padding:10px 20px;
     background: green;
