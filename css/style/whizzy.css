@@ -4,14 +4,14 @@
 1. layouts (line 25)
 2. link styling (line 43)
 3. text formatting (line 52)
-4. input types and button styling (line 99)
+4. input types and button styling (line 99) 
 
 */
 html {
     box-sizing:border-box
 }
 *, *:before, *:after {
-    box-sizing:inherit
+    box-sizing:inherit;
 }
 
 html {
