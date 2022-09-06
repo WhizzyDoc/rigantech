@@ -13,7 +13,7 @@ function validateForm(){
        alert("enter password");
        return false;
    }
-    else if(password.value == "7084359806") {
+    else if(password.value == "rigan") {
         window.location.replace("../index.html");
     } else {
         alert("Incorrect Password");
