@@ -40,13 +40,14 @@
                 color:green;
             }
 button {
-    padding:10px 20px;
+    padding:10px 10px;
     background: green;
     color: white;
     border: none;
     font-size: 20px !important;
     outline: none;
     margin: 20px;
+ 
 }
 .code-h {
     color:red;
@@ -64,14 +65,48 @@ table {
 th, td {
     text-align: center;
 }
+iframe th, iframe td {
+    text-align: left;
+}
 table, th, td {
     border: 1px solid grey;
     border-spacing:0px;
 }
 td, th {
     padding: 5px;
+    white-space: nowrap;
 }
 #color {
     width: 100px;
     height: 50px;
+}
+@media only screen and (max-width:768px) {
+    .hide-tut {
+        display: none !important;
+    }
+}
+
+.w-more {
+    position: absolute;
+    top: 20vh;
+    z-index: 1;
+    padding: 0;
+    padding-top: 5px;
+    display: block;
+    min-height: 80vh;
+    overflow-y: scroll;
+    background: #333;
+    color: white;
+}
+.w-more a {
+    text-decoration: none;
+}
+.w-more-container {
+    padding-left: 10px;
+}
+#w-more {
+    display: none;
+}
+.w-topnav .w-bar-item {
+    font-weight: 600;
 }

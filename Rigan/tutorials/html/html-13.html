@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Colors</title>
+<title>HTML Sections</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Rigan Tech">
 <meta name="description" content="A website to learn all about programming">
@@ -110,12 +110,12 @@
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-5.html">HTML Text Formatting</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-6.html">HTML Attributes</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-7.html">HTML Comments</a></div>
-  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-8.html">HTML Colors</a></div>
+  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-8.html">HTML Colors</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-9.html">HTML Responsive</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-10.html">HTML Centered</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-11.html">HTML Styling</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-12.html">HTML Block & Inline Elements</a></div>
-  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-13.html">HTML Sections</a></div>
+  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-13.html">HTML Sections</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-14.html">HTML Entities</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-15.html">HTML Line Break & Horizontal Rule</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-16.html">HTML Images</a></div>
@@ -145,204 +145,94 @@
 <div id="main" class="w-animate-right w-main w-theme-l4 col-sm-12 col-md-12 col-l-10">
    
   <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-    <a href="html-7.html"><button class="prev">&lt;&lt; Previous</button></a>
-    <a href="html-9.html"><button class="next">Next &gt;&gt;</button></a>
+    <a href="html-12.html"><button class="prev">&lt;&lt; Previous</button></a>
+    <a href="html-14.html"><button class="next">Next &gt;&gt;</button></a>
     </div>
 
     <div class="note">
-      <h2 style="font-weight:500;">HTML Colors</h2>
-      <p>HTML Colors define colors that we see on a web page.</p>
-      <p>In this chapter, we will use <a href="html-9.html" title="HTML  Styling" style="color:blue;">inline styling with CSS properties</a> <span class="code-h"><code>color</code></span> and <span class="code-h"><code>baackground-color</code></span> to change the text color and/or background color of HTML Elements.</p>
-      <p>HTML Colors can be defined using the following:</p>
+      <h2 style="font-weight:500;">HTML Sections</h2>
+      <p>HTML Sections group different HTML Elements (e.g. text, heading, paragraphs, images etc.) together.</p>
+      <p>Creating sections is essential for organizing and styling web contents.</p>
+
+      <h2 style="font-weight:500;">Elements Used for HTML Sections</h2>
       <ul>
-        <li><b>Color Name:</b> It defines any valid color by its color name e.g <span class="code-h"><code>white</code></span>, <span class="code-h"><code>blue</code></span>.</li>
-        <li><b>Hex Color Value:</b> Or Hexadecimal Color Value. It defines any valid color by a hash followed by letters and/or numbers e.g. <span class="code-h"><code>#ffffff</code></span>(white), <span class="code-h"><code>#000000</code></span>(black).</li>
-        <li><b>RGB Color Value:</b> RGB stands for Red, Green & Blue. It defines any valid color by this format &quot;<span class="code-h"><code>rgb(number, number, number)</code></span>&quot; e.g. <span class="code-h"><code>rgb(255, 255, 255)</code></span>, <span class="code-h"><code>rgb(0, 0, 0)</code></span>. The numbers represent the intensity of the red, green  aand blue colors  in that particular order. The numbers range from <span class="code-h"><code>0</code></span> to <span class="code-h"><code>255</code></span>.</li>
+        <li><span class="code-h"><code>&lt;div&gt;</code></span>: used to group large group of HTML elements like navigation, header, main content, footer, images; it is a <a href="html-12.html" style="color:blue">block-level element</a></li>
+        <li><span class="code-h"><code>&lt;span&gt;</code></span>: used to group smaller group of text in a paragraph and few HTML elements; it is an <a href="html-12.html" style="color:blue">inline element</a></li>
       </ul>
+
+      <h2 style="font-weight:500;">HTML5 Semantic Elements</h2>
+      <p>Here is a list of HTML5 Semantic Elements that work similarly with the <span class="code-h"><code>&lt;div&gt;</code></span> element:</p>
+      <ul>
+        <li><span class="code-h"><code>&lt;nav&gt;</code></span>: defines a navigation list or bar</li>
+        <li><span class="code-h"><code>&lt;header&gt;</code></span>: defines a header</li>
+        <li><span class="code-h"><code>&lt;main&gt;</code></span>: defines the main content</li>
+        <li><span class="code-h"><code>&lt;footer&gt;</code></span>: defines a footer</li>
+      </ul>
+      <p>Using these HTML5 semantic elements is not mandatory but it is still a good practice and recommended because it might help in <b>Search Engine Optimization (SEO)</b> plus your code will be more understandable.</p>
+      <p>However these elements work in the exact same way with <span class="code-h"><code>&lt;div&gt;</code></span> in terms of rendering in a browser.</p>
     </div>
-      <h3>Example:</h3>
+
+      <h3><span class="code-h"><code>&lt;div&gt;</code></span> Example:</h3>
       <div class="html">
           <code>
-            <span class="comm">&lt;!-- changing background color using a color name --&gt;</span><br>
-            <span class="tag">&lt;div <span class="attr">style</span>=<span class="value">&quot;background-color: black&quot;</span>&gt;</span><br>
-            <br>
-            &nbsp;&nbsp;<span class="comm">&lt;!-- changing text color using a hexadecimal value --&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;p <span class="attr">style</span>=<span class="value">&quot;color: #008080;&quot;</span>&gt;</span>I am a text  in Teal color<span class="tag">&lt;/p&gt;</span><br>
-            <br>
-            &nbsp;&nbsp;<span class="comm">&lt;!-- changing text color using an RGB value --&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;p <span class="attr">style</span>=<span class="value">&quot;color: rgb(0, 128, 128);&quot;</span>&gt;</span>I am a text  in Teal color<span class="tag">&lt;/p&gt;</span><br>
-            <br>
-            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div <span class="attr">style</span>=<span class="value">&quot;background: blue; width: 300px; height: 200px; color: white;&quot;</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>This is a Paragraph<span class="tag">&lt;/p&gt;</span><br>
+            <span class="tag">&lt;/div&gt;</span><br><br>
+            <span class="tag">&lt;div <span class="attr">style</span>=<span class="value">&quot;background: yellow; width: 200px; height: 300px; color: black;&quot;</span>&gt;</span><br>
+            &nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>This is a Paragraph<span class="tag">&lt;/p&gt;</span><br>
+            <span class="tag">&lt;/div&gt;</span><br>
           </code>
       </div>
-      <br>
       
       <h3>Output:</h3>
       <div class="output">
-          <div style="background:black; color:teal;">
-            <p>I am a text in Teal color</p>
-            <p>I am a text in Teal color</p>
-          </div>
+         <div style="background:blue;width:280px;height:200px;color:white;">
+           <p>This is a paragraph</p>
+         </div>
+         <div style="background:yellow;width:200px;height:280px;color:black;">
+          <p>This is a paragraph</p>
+        </div>
       </div><br>
-      <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
+      <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a><br>
 
-      <div class="note w-section">
-        <h2 style="font-weight:500;">Most Common HTML Colors</h2>
-        <div style="width: 100%; padding: 10px; overflow-x: scroll;">
-        <table>
-          <thead>
-            <tr>
-              <th>Color</th>
-              <th>Color  Name</th>
-              <th>Hex  Color Value</th>
-              <th>RGB Color Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="background:white;"></td>
-              <td>White</td>
-              <td>#ffffff</td>
-              <td>(255, 255, 255)</td>
-            </tr>
-            <tr>
-              <td style="background:silver;"></td>
-              <td>Silver</td>
-              <td>#c0c0c0</td>
-              <td>(192, 192, 192)</td>
-            </tr>
-            <tr>
-              <td style="background:gray;"></td>
-              <td>Gray</td>
-              <td>#808080</td>
-              <td>(128, 128, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:black;"></td>
-              <td>Black</td>
-              <td>#000000</td>
-              <td>(0, 0, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:red;"></td>
-              <td>Red</td>
-              <td>#ff0000</td>
-              <td>(255, 0, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:maroon;"></td>
-              <td>Maroon</td>
-              <td>#800000</td>
-              <td>(128, 0, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:yellow;"></td>
-              <td>Yellow</td>
-              <td>#ffff00</td>
-              <td>(255, 255, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:olive;"></td>
-              <td>Olive</td>
-              <td>#808000</td>
-              <td>(128, 128, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:lime;"></td>
-              <td>Lime</td>
-              <td>#00ff00</td>
-              <td>(120, 190, 33)</td>
-            </tr>
-            <tr>
-              <td style="background:green;"></td>
-              <td>Green</td>
-              <td>#008000</td>
-              <td>(0, 255, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:aqua;"></td>
-              <td>Aqua</td>
-              <td>#00ffff</td>
-              <td>(0, 255, 255)</td>
-            </tr>
-            <tr>
-              <td style="background:teal;"></td>
-              <td>Teal</td>
-              <td>#008080</td>
-              <td>(0, 128, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:blue;"></td>
-              <td>Blue</td>
-              <td>#0000ff</td>
-              <td>(0, 0, 255)</td>
-            </tr>
-            <tr>
-              <td style="background:navy;"></td>
-              <td>Navy</td>
-              <td>#000080</td>
-              <td>(0, 0, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:pink;"></td>
-              <td>Pink</td>
-              <td>#ffcocb</td>
-              <td>(255, 192, 203)</td>
-            </tr>
-            <tr>
-              <td style="background:purple;"></td>
-              <td>Purple</td>
-              <td>#800080</td>
-              <td>(128, 0, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:fuchsia;"></td>
-              <td>Fuchsia</td>
-              <td>#ff00ff</td>
-              <td>(255, 0, 255)</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="w-padding-small w-margin-bottom w-margin-top w-green">
+          <p><span style="font-size:150%;font-weight:600;"><i class="fa fa-check"></i></span> As you can see the two <span class="code-h" style="color:yellow;"><code>&lt;div&gt;</code></span> elements are separated from each other. They also have different styles. That's one of the advantages of HTML sections, it lets us style specific parts of an HTML document.</p>
         </div>
 
-        <h2 style="font-weight:500;">HTML Color  Picker</h2>
-        <p>Click the button below to pick a color. It will display the hex value, rgb value and the color in text and  background.</p>
-        <p><b>Note:</b> works best with Chrome Browser.</p>
-        <div style="padding:20px;">
-          <input type="color" value="#000000" id="color" oninput="hex.innerHTML=value; colortext.style.color=value; colorback.style.backgroundColor=value; hexToRgb(color);">
+        <h3><span class="code-h"><code>&lt;span&gt;</code></span> Example:</h3>
+        <div class="html">
+            <code>
+              <span class="tag">&lt;span <span class="attr">style</span>=<span class="value">&quot;font-size: 30px;&quot;</span>&gt;</span>I<span class="tag">&lt;/span&gt;</span> 
+              <span class="tag">&lt;span <span class="attr">style</span>=<span class="value">&quot;color: blue;&quot;</span>&gt;</span>am a paragraph<span class="tag">&lt;/span&gt;</span> 
+              <span class="tag">&lt;span <span class="attr">style</span>=<span class="value">&quot;color: red;&quot;</span>&gt;</span>and my words are styled<span class="tag">&lt;/span&gt;</span> 
+              <span class="tag">&lt;span <span class="attr">style</span>=<span class="value">&quot;color:green;&quot;</span>&gt;</span>differently using<span class="tag">&lt;/span&gt;</span> 
+              <span class="tag">&lt;span <span class="attr">style</span>=<span class="value">&quot;color:yellow;&quot;</span>&gt;</span>the span element<span class="tag">&lt;/span&gt;</span> 
+            </code>
         </div>
+        
+        <h3>Output:</h3>
+        <div class="output">
+            <span style="font-size:30px;">I </span><span style="color:blue;">am a paragraph </span><span style="color:red;">and my words are styled </span><span style="color:green;">differently using </span><span style="color:yellow;">the span elment</span><br>
+        </div><br>
 
-        <div style="width: 100%; padding: 10px; overflow-x: scroll;">
-        <table>
-          <thead>
-            <tr>
-              <th>HEX</th>
-              <th>RGB</th>
-              <th>Text</th>
-              <th>Background</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="hex">#000000</td>
-              <td id="rgb">rgb(0,0,0)</td>
-              <td id="colortext" style="font-weight:800;">Hello World</td>
-              <td id="colorback" style="background-color:black"></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="w-padding-small w-margin-bottom w-margin-top w-green">
+          <p><span style="font-size:150%;font-weight:600;"><i class="fa fa-check"></i></span> As you can see the <span class="code-h" style="color:yellow;"><code>&lt;span&gt;</code></span> elements did not separate the paragraph into multiple lines.</p>
         </div>
+        <div class="w-padding-small w-margin-bottom w-margin-top w-green">
+          <p><span style="font-size:150%;font-weight:600;"><i class="fa fa-lightbulb-o"></i></span> <b>Always remember</b>: The <span class="code-h" style="color:yellow;"><code>&lt;span&gt;</code></span> element is good for styling and organizing few and inline elements while the <span class="code-h" style="color:yellow;"><code>&lt;div&gt;</code></span> element is good for larger elements.</p>
+        </div>
+      
 
-      </div>
+      
 
 
-        <br>
+        <br><br> 
         <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
       <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
         
         <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-          <a href="html-7.html"><button class="prev">&lt;&lt; Previous</button></a>
-          <a href="html-9.html"><button class="next">Next &gt;&gt;</button></a>
+          <a href="html-12.html"><button class="prev">&lt;&lt; Previous</button></a>
+          <a href="html-14.html"><button class="next">Next &gt;&gt;</button></a>
           </div>
 
 

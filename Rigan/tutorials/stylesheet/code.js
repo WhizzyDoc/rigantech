@@ -19,3 +19,24 @@ function hexToRgb(color) {
     x.push(parseInt(color.slice(4, 6), 16))
     rgb.innerHTML = "rgb(" + x.toString() + ")";
 }
+
+flag = 1;
+var showMore = document.getElementById("showMore");
+showMore.onclick = function() {
+    if(flag==1) {
+        document.getElementById("w-more").style.display = "block";
+        showMore.style.backgroundColor = "white";
+        showMore.style.color = "black";
+        flag = 0;
+    }
+    else {
+        document.getElementById("w-more").style.display = "none";
+        showMore.style.backgroundColor = "#446003";
+        showMore.style.color = "white";
+        flag = 1;
+    }
+}
+function closeMore() {
+    document.getElementById("w-more").style.display = "none";
+    flag = 1;
+}

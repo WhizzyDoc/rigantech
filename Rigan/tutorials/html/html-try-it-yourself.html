@@ -1,30 +1,308 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>HTML Try it Yourself</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Rigan Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rigan Tech">
     <meta name="description" content="A website to learn all about programming">
     <meta name="keywords" content="coding, programming, html, css, learn html, learn css">
     <link rel="shortcut icon" href="../stylesheet/logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" href="../stylesheet/editor.css">
+    <link rel="stylesheet" href="../stylesheet/editor.css" />
   </head>
 
-  <body>
-    <div class="container">
-      <textarea id="html" placeholder="HTML" spellcheck="false"></textarea>
-      <textarea id="css" placeholder="CSS" spellcheck="false"></textarea>
-      <textarea id="js" placeholder="Javascript" spellcheck="false"></textarea>
+  <body onload="lastMem();">
+
+    <div class="about" id="about">
+      <h1>{Rigan Editor}</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>Software Type</td>
+            <td>Code Editor</td>
+          </tr>
+          <tr>
+            <td>Developed with</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>Developed by</td>
+            <td>Rigan Tech I.T Solutions</td>
+          </tr>
+          <tr>
+            <td>Supported Language</td>
+            <td>HTML, CSS & JavaScript</td>
+          </tr>
+          <tr>
+            <td>Supported Devices</td>
+            <td>Android, iOS, PC</td>
+          </tr>
+          <tr>
+            <td>Version</td>
+            <td>22.8.1</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="ok" onclick="hideAbout()">Close</button>
+      
     </div>
-    <div class="container">
-      <span class="h1">Result: (displays automatically below; does not support Mozilla Firefox)</span>
-      <button><a href="../html/html-1.html"><i class="fa fa-home"></i> Home</a></button>
+
+
+    <div class="manual" id="manual">
+      <h3>Features of Rigan Editor:</h3>
+      <ul>
+        <li>A dark theme Code Editor for HTML, CSS & JavaScript</li>
+        <li>En Embedded Web Browser Simulation that shows the result of the codes</li>
+        <li>Line Numbering when writing codes</li>
+        <li>Hot Keys Available at the bottom of Editor for Mobile/Tablet users to make coding easier</li>
+        <li>Side Navigation that contains tools such as downloads and general info</li>
+        <li>You can easily download your codes by simply clicking on appropriate buttons in the side menu</li>
+        <li>You can easily save your current state to avoid loss of codes when browser reloads or closes by simply clicking on the <b>&quot;Save current state&quot; button on side menu or pressing &quot;Ctrl+S&quot; on your keyboard</b></li>
+        <li>Contain some keyboard shortcut keys that helps navigation easier</li>
+      </ul>
+      <button id="ok" onclick="hideManual()">Close</button>
     </div>
-    <div class="container"></div>
-    <iframe id="code"></iframe>
+
+
+    <div class="save" id="save">
+      <h1>Save Current State</h1>
+      <p>Are you sure you want to save current state? You will be redirected to this particular stage when next you open your browser.</p>
+      <button id="ok" onclick="hideSave()">No, don't save</button>
+      <button id="no" onclick="save()">Yes, save it</button>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <h3>{Rigan Editor}</h3>
+
+      <div style="width:100%;background:red;color:white;text-align:center;padding:10px;margin-bottom:5px;" class="h3">Menu <i class="fa fa-menu"></i></div>
+      <a href="html-1.html" style="width:100%;margin:0;padding:0;"><button><i class="fa fa-home"></i> Home</button></a>
+  
+      <div style="width:100%;background:red;color:white;text-align:center;padding:10px;margin-bottom:5px;" class="h3">Download Code <i class="fa fa-download"></i></div>
+        <button id="downloadHTML">&lt;/HTML&gt;</button>
+        <button id="downloadCSS">{ CSS }</button>
+        <button id="downloadJS">(JavaScript)</button>
+      <div style="width:100%;background:red;color:white;text-align:center;padding:10px;margin-bottom:5px;" class="h3">Navigation <i class="fa fa-map-marker"></i></div>
+        <button onclick="about()">About (Ctrl+R)</button>
+        <button onclick="manual()">User Manual (Ctrl+M)</button>
+        <button onclick="showSave()">Save Current Mode (Ctrl+S)</button>
+        <div style="width:100%;background:red;color:white;text-align:center;padding:10px;margin-bottom:5px;" class="h3">Socials <i class="fa fa-globe"></i></div>
+        <button><a href="https://twitter.com/DocWhizzy?s=09" style="padding:0;">Twitter <i style="color:aqua;" class="fa fa-twitter"></i></a></button>
+        <button><a href="https://github.com/WhizzyDoc/" style="padding:0;">GitHub <i style="color:white;" class="fa fa-github"></i></a></button>
+        <button><a href="https://www.linkedin.com/in/hassan-ridwan-51563323a" style="padding:0;">LinkedIn <i style="color:lightblue;" class="fa fa-linkedin"></i></a></button>
+        <button><a href="https://m.facebook.com/riliwan.hassan.35" style="padding:0;">Facebook <i style="color:blue;" class="fa fa-facebook"></i></a></button>
+
+      
+    </div>
+
+    <div class="container" id="header">
+        <div style="color:white;font-size:25px;margin-right:10px;" onclick="openNav()"><i class="fa fa-list"></i></div>
+   
+      <div>
+        <button id="showHtml">HTML</button>
+        <button id="showCss">CSS</button>
+        <button id="showJs">JS</button>
+        <button id="showResult">Result</button>
+      </div>
+    </div>
+   
+    <div id="editor">
+
+      <div class="editor" id="html1">
+        <div class="line-numbers">
+          <span></span>
+        </div>
+        <textarea id="html" placeholder="HTML" spellcheck="false"></textarea>
+      </div>
+      <div class="editor" id="css1">
+        <div class="line-numbers1">
+          <span></span>
+        </div>
+        <textarea id="css" placeholder="CSS" spellcheck="false"></textarea>
+      </div>
+
+      <div class="editor" id="js1">
+        <div class="line-numbers2">
+          <span></span>
+        </div>
+        <textarea id="js" placeholder="JavaScript" spellcheck="false"></textarea>
+      </div>
+      
+      <div id="html_short">
+          
+          <div class="but" style="width:500px;">
+              
+              <button class="hshort" value="<div></div>">&lt;div&gt;</button>
+              <button class="hshort" value='<a href=""></a>'>&lt;a&gt;</button>
+              <button class="hshort" value='<img src="" alt="" />'>&lt;img&gt;</button>
+              <button class="hshort" value='class=""'>[class]</button>
+              <button class="hshort" value='id=""'>[id]</button>
+              <button class="hshort" value="<p></p>">&lt;p&gt;</button>
+              <button class="hshort" value="<span></span>">&lt;span&gt;</button>
+              <button class="hshort" value="<li></li>">&lt;li&gt;</button>
+              <button class="hshort" value="<ul></ul>">&lt;ul&gt;</button>
+              <button class="hshort" value='<input type="" />'>&lt;input&gt;</button>
+              <button class="hshort" value='<link rel="" href="" />'>&lt;link&gt;</button>
+              <button class="hshort" value='<i class=""></i>'>&lt;i&gt;</button>
+              <button class="hshort" value='<meta name="" content="" />'>&lt;meta&gt;</button>
+              
+          </div>
+          
+          <div class="but2" style="width:670px;">
+              
+            <button class="hshort" value="  ">Tab</button>
+            <button class="hshort" value='=""'>=&quot; &quot;</button>
+            <button class="hshort" value="<">&lt;</button>
+            <button class="hshort" value=">">&gt;</button>
+            <button class="hshort" value="</">&lt;/</button>
+            <button class="hshort" value="-">-</button>
+            <button class="hshort" value="<!-- -->">&lt;!-- --&gt;</button>
+            <button class="hshort" value="#">#</button>
+            <button class="hshort" value=".">.</button>
+            <button class="hshort" value="(">(</button>
+            <button class="hshort" value=")">)</button>
+            <button class="hshort" value=":">:</button>
+            <button class="hshort" value=";">;</button>
+            <button class="hshort" value="&">&</button>
+            <button class="hshort" value="_">_</button>
+            <button class="hshort" value="/">/</button>
+            <button class="hshort" value="!">!</button>
+            <button class="hshort" value="{">{</button>
+            <button class="hshort" value="}">}</button>
+          
+          </div>
+          
+      </div>
+
+
+      <div id="css_short">
+          
+        <div class="but" style="width:1130px;">
+            
+            <button class="cshort" value="body {}">body</button>
+            <button class="cshort" value="div {}">div</button>
+            <button class="cshort" value="background: ;">background</button>
+            <button class="cshort" value="wwidth: ;">width</button>
+            <button class="cshort" value="height: ;">height</button>
+            <button class="cshort" value="font-size: ;">font-size</button>
+            <button class="cshort" value="font-family: ;">font-family</button>
+            <button class="cshort" value="color: ;">color</button>
+            <button class="cshort" value="margin: ;">margin</button>
+            <button class="cshort" value="padding: ;">padding</button>
+            <button class="cshort" value="px">px</button>
+            <button class="cshort" value="em">em</button>
+            <button class="cshort" value='url("")'>url</button>
+            <button class="cshort" value="position: ;">position</button>
+            <button class="cshort" value="top: ;">top</button>
+            <button class="cshort" value="right: ;">right</button>
+            <button class="cshort" value="bottom: ;">bottom</button>
+            <button class="cshort" value="left: ;">left</button>
+            <button class="cshort" value="border-radius: ;">border-R</button>
+            <button class="cshort" value="@media() {}">@media</button>
+
+        </div>
+        
+        <div class="but2" style="width:1100px;">
+            
+          <button class="cshort" value="  ">tab</button>
+          <button class="cshort" value="{">{</button>
+          <button class="cshort" value="}">}</button>
+          <button class="cshort" value=":">:</button>
+          <button class="cshort" value=";">;</button>
+          <button class="cshort" value="%">%</button>
+          <button class="cshort" value="(">(</button>
+          <button class="cshort" value=")">)</button>
+          <button class="cshort" value="#">#</button>
+          <button class="cshort" value='""'>&quot; &quot;</button>
+          <button class="cshort" value="/* */">/*  */</button>
+          <button class="cshort" value="-">-</button>
+          <button class="cshort" value="@">@</button>
+          <button class="cshort" value="::">: :</button>
+          <button class="cshort" value=".">.</button>
+          <button class="cshort" value=",">,</button>
+          <button class="cshort" value="_">_</button>
+          <button class="cshort" value="+">+</button>
+          <button class="cshort" value=">">&gt;</button>
+          <button class="cshort" value="/">/</button>
+          <button class="cshort" value="&">&</button>
+          <button class="cshort" value="[">[</button>
+          <button class="cshort" value="]">]</button>
+        
+        </div>
+        
+    </div>
+
+
+    <div id="js_short">
+          
+      <div class="but" style="width:600px;">
+          
+          <button class="jshort" value="function() {}">function()</button>
+          <button class="jshort" value="if() {}">if()</button>
+          <button class="jshort" value="if() {} else {}">if()...else</button>
+          <button class="jshort" value="true">true</button>
+          <button class="jshort" value="false">false</button>
+          <button class="jshort" value="return">return</button>
+          <button class="jshort" value="for() {}">for()</button>
+          <button class="jshort" value="alert();">alert()</button>
+          <button class="jshort" value="document.querySelector('');">querySelector()</button>
+          <button class="jshort" value="document.querySelectorAll('');">querySelectorAll()</button>
+          <button class="jshort" value='document.getElementById("");'>getElementById()</button>
+          <button class="jshort" value=".addEventListener('', function() {})">addEventListener</button>
+          <button class="jshort" value=".onclick = function() {}">onclick()</button>
+          <button class="jshort" value="compile();">compile()</button>
+
+      </div>
+      
+      <div class="but2" style="width:1030px;">
+          
+        <button class="jshort" value="  ">tab</button>
+        <button class="jshort" value="{">{</button>
+        <button class="jshort" value="}">}</button>
+        <button class="jshort" value="(">(</button>
+        <button class="jshort" value=")">)</button>
+        <button class="jshort" value="=">=</button>
+        <button class="jshort" value="!">!</button>
+        <button class="jshort" value="&&">&&</button>
+        <button class="jshort" value=";">;</button>
+        <button class="jshort" value="$">$</button>
+        <button class="jshort" value='""'>&quot; &quot;</button>
+        <button class="jshort" value="''">&lsquo; &rsquo;</button>
+        <button class="jshort" value="``">` `</button>
+        <button class="jshort" value="||">| |</button>
+        <button class="jshort" value=":">:</button>
+        <button class="jshort" value="//">/ /</button>
+        <button class="jshort" value="/**/">/* */</button>
+        <button class="jshort" value="=>">=&gt;</button>
+        <button class="jshort" value="<">&lt;</button>
+        <button class="jshort" value=">">&gt;</button>
+        <button class="jshort" value="#">#</button>
+        <button class="jshort" value=",">,</button>
+        <button class="jshort" value=".">.</button>
+        <button class="jshort" value="%">%</button>
+        <button class="jshort" value="-">-</button>
+        <button class="jshort" value="_">_</button>
+        <button class="jshort" value="+">+</button>
+        <button class="jshort" value="/">/</button>
+        <button class="jshort" value="[">[</button>
+        <button class="jshort" value="]">]</button>
+      
+      </div>
+      
+  </div>
+      
+
+    </div>
+    
+
+    <div id="result">
+     
+      <div class="container"></div>
+      <iframe id="code"></iframe>
+    </div>
 
     <script type="text/javascript" src="../stylesheet/editor.js"></script>
+    <script type="text/javascript" src="../stylesheet/a.js"></script>
+    <script type="text/javascript" src="../stylesheet/short.js"></script>
+    <script type="text/javascript" src="../stylesheet/nav.js"></script>
   </body>
 </html>

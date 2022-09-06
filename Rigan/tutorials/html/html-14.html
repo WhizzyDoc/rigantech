@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Colors</title>
+<title>HTML Character Entities</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Rigan Tech">
 <meta name="description" content="A website to learn all about programming">
@@ -110,13 +110,13 @@
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-5.html">HTML Text Formatting</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-6.html">HTML Attributes</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-7.html">HTML Comments</a></div>
-  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-8.html">HTML Colors</a></div>
+  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-8.html">HTML Colors</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-9.html">HTML Responsive</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-10.html">HTML Centered</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-11.html">HTML Styling</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-12.html">HTML Block & Inline Elements</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-13.html">HTML Sections</a></div>
-  <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-14.html">HTML Entities</a></div>
+  <div class="w-bar-item w-btn w-theme-dark w-hover-sand w-large w-left-align"><a href="html-14.html">HTML Entities</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-15.html">HTML Line Break & Horizontal Rule</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-16.html">HTML Images</a></div>
   <div class="w-bar-item w-btn w-theme-d1 w-hover-sand w-large w-left-align"><a href="html-17.html">HTML CSS</a></div>
@@ -145,204 +145,138 @@
 <div id="main" class="w-animate-right w-main w-theme-l4 col-sm-12 col-md-12 col-l-10">
    
   <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-    <a href="html-7.html"><button class="prev">&lt;&lt; Previous</button></a>
-    <a href="html-9.html"><button class="next">Next &gt;&gt;</button></a>
-    </div>
+    <a href="html-13.html"><button class="prev">&lt;&lt; Previous</button></a>
+    <a href="html-15.html"><button class="next">Next &gt;&gt;</button></a>
+  </div>
 
     <div class="note">
-      <h2 style="font-weight:500;">HTML Colors</h2>
-      <p>HTML Colors define colors that we see on a web page.</p>
-      <p>In this chapter, we will use <a href="html-9.html" title="HTML  Styling" style="color:blue;">inline styling with CSS properties</a> <span class="code-h"><code>color</code></span> and <span class="code-h"><code>baackground-color</code></span> to change the text color and/or background color of HTML Elements.</p>
-      <p>HTML Colors can be defined using the following:</p>
+      <h2 style="font-weight:500;">HTML Character Entities</h2>
+      <p>Some characters are reserved in HTML.</p>
+      <p>For example, if you write a less than <span class="code-h"><code>&lt;</code></span> sign and a greater than <span class="code-h"><code>&gt;</code></span> sign, the browser may interpret them as tags.</p>
+      <p>In that kind of situation, we have to make use of HTML Character Entities.</p>
+      <p>There are three ways to define an HTML Character Entity.</p>
       <ul>
-        <li><b>Color Name:</b> It defines any valid color by its color name e.g <span class="code-h"><code>white</code></span>, <span class="code-h"><code>blue</code></span>.</li>
-        <li><b>Hex Color Value:</b> Or Hexadecimal Color Value. It defines any valid color by a hash followed by letters and/or numbers e.g. <span class="code-h"><code>#ffffff</code></span>(white), <span class="code-h"><code>#000000</code></span>(black).</li>
-        <li><b>RGB Color Value:</b> RGB stands for Red, Green & Blue. It defines any valid color by this format &quot;<span class="code-h"><code>rgb(number, number, number)</code></span>&quot; e.g. <span class="code-h"><code>rgb(255, 255, 255)</code></span>, <span class="code-h"><code>rgb(0, 0, 0)</code></span>. The numbers represent the intensity of the red, green  aand blue colors  in that particular order. The numbers range from <span class="code-h"><code>0</code></span> to <span class="code-h"><code>255</code></span>.</li>
+        <li><span class="code-h"><code>&entity_name;</code></span> HTML entity named encoding.</li>
+        <li><span class="code-h"><code>&#entity_decimal;</code></span> HTML entity decimal encoding.</li>
+        <li><span class="code-h"><code>&#&times;entity_hexadecimal</code></span> HTML entity hexadecimal encoding.</li>
       </ul>
+
+      <h2 style="font-weight:500;">Useful HTML Character Entities</h2>
+      <div style="width: 100%; padding: 10px; overflow-x: scroll;">
+        <table>
+          <thead>
+            <tr>
+              <th>Result</th>
+              <th>Description</th>
+              <th>HTML Entity Name</th>
+              <th>HTML Entity Decimal</th>
+              <th>HTML Entity Hexadecimal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&nbsp;</td>
+              <td>non-breaking space</td>
+              <td>&amp;nbsp;</td>
+              <td>&amp;#160;</td>
+              <td>&amp;#&times;00A0;</td>
+            </tr>
+            <tr>
+              <td>&lt;</td>
+              <td>less than</td>
+              <td>&amp;lt;</td>
+              <td>&amp;#60;</td>
+              <td>&amp;#&times;003C;</td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>greater than</td>
+              <td>&amp;gt;</td>
+              <td>&amp;#62;</td>
+              <td>&amp;#&times;003E;</td>
+            </tr>
+            <tr>
+              <td>&amp;</td>
+              <td>ampersand</td>
+              <td>&amp;amp;</td>
+              <td>&amp;#38;</td>
+              <td>&amp;#&times;0026;</td>
+            </tr>
+            <tr>
+              <td>&quot;</td>
+              <td>double quotation</td>
+              <td>&amp;quot;</td>
+              <td>&amp;#34;</td>
+              <td>&amp;#&times;0022;</td>
+            </tr>
+            <tr>
+              <td>&apos;</td>
+              <td>single quotation (apostrophe)</td>
+              <td>&amp;apos;</td>
+              <td>&amp;#39;</td>
+              <td>&amp;#&times;0027;</td>
+            </tr>
+            <tr>
+              <td>&cent;</td>
+              <td>cent</td>
+              <td>&amp;cent;</td>
+              <td>&amp;#162;</td>
+              <td>&amp;#&times;00A2;</td>
+            </tr>
+            <tr>
+              <td>&pound;</td>
+              <td>pound</td>
+              <td>&amp;pound;</td>
+              <td>&amp;#163;</td>
+              <td>&amp;#&times;00A3;</td>
+            </tr>
+            <tr>
+              <td>&yen;</td>
+              <td>yen</td>
+              <td>&amp;yen;</td>
+              <td>&amp;#165;</td>
+              <td>&amp;#&times;00A5;</td>
+            </tr>
+            <tr>
+              <td>&euro;</td>
+              <td>euro</td>
+              <td>&amp;euro;</td>
+              <td>&amp;#8364;</td>
+              <td>&amp;#&times;20AC;</td>
+            </tr>
+            <tr>
+              <td>&copy;</td>
+              <td>copyright</td>
+              <td>&amp;copy;</td>
+              <td>&amp;#169;</td>
+              <td>&amp;#&times;00A9;</td>
+            </tr>
+            <tr>
+              <td>&reg;</td>
+              <td>registered trademark</td>
+              <td>&amp;reg;</td>
+              <td>&amp;#174;</td>
+              <td>&amp;#&times;00AE;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="w-padding-small w-margin-bottom w-margin-top w-green">
+        <p><span style="font-size:150%;font-weight:600;"><i class="fa fa-lightbulb-o"></i></span> <b>Tip!</b> There is an online tool called Graphemica used as a reference for characters. To use Graphemica, just enter the address into your browser <span class="code-h" style="color:yellow;">&quot;https://graphemica.com/(any character)&quot;</span>, and you will see the character's HTML entity values and more!</p>
+      </div>
+
     </div>
-      <h3>Example:</h3>
-      <div class="html">
-          <code>
-            <span class="comm">&lt;!-- changing background color using a color name --&gt;</span><br>
-            <span class="tag">&lt;div <span class="attr">style</span>=<span class="value">&quot;background-color: black&quot;</span>&gt;</span><br>
-            <br>
-            &nbsp;&nbsp;<span class="comm">&lt;!-- changing text color using a hexadecimal value --&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;p <span class="attr">style</span>=<span class="value">&quot;color: #008080;&quot;</span>&gt;</span>I am a text  in Teal color<span class="tag">&lt;/p&gt;</span><br>
-            <br>
-            &nbsp;&nbsp;<span class="comm">&lt;!-- changing text color using an RGB value --&gt;</span><br>
-            &nbsp;&nbsp;<span class="tag">&lt;p <span class="attr">style</span>=<span class="value">&quot;color: rgb(0, 128, 128);&quot;</span>&gt;</span>I am a text  in Teal color<span class="tag">&lt;/p&gt;</span><br>
-            <br>
-            <span class="tag">&lt;/div&gt;</span>
-          </code>
-      </div>
-      <br>
       
-      <h3>Output:</h3>
-      <div class="output">
-          <div style="background:black; color:teal;">
-            <p>I am a text in Teal color</p>
-            <p>I am a text in Teal color</p>
-          </div>
-      </div><br>
+      <br>
+
+      <br>
       <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
-
-      <div class="note w-section">
-        <h2 style="font-weight:500;">Most Common HTML Colors</h2>
-        <div style="width: 100%; padding: 10px; overflow-x: scroll;">
-        <table>
-          <thead>
-            <tr>
-              <th>Color</th>
-              <th>Color  Name</th>
-              <th>Hex  Color Value</th>
-              <th>RGB Color Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="background:white;"></td>
-              <td>White</td>
-              <td>#ffffff</td>
-              <td>(255, 255, 255)</td>
-            </tr>
-            <tr>
-              <td style="background:silver;"></td>
-              <td>Silver</td>
-              <td>#c0c0c0</td>
-              <td>(192, 192, 192)</td>
-            </tr>
-            <tr>
-              <td style="background:gray;"></td>
-              <td>Gray</td>
-              <td>#808080</td>
-              <td>(128, 128, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:black;"></td>
-              <td>Black</td>
-              <td>#000000</td>
-              <td>(0, 0, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:red;"></td>
-              <td>Red</td>
-              <td>#ff0000</td>
-              <td>(255, 0, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:maroon;"></td>
-              <td>Maroon</td>
-              <td>#800000</td>
-              <td>(128, 0, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:yellow;"></td>
-              <td>Yellow</td>
-              <td>#ffff00</td>
-              <td>(255, 255, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:olive;"></td>
-              <td>Olive</td>
-              <td>#808000</td>
-              <td>(128, 128, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:lime;"></td>
-              <td>Lime</td>
-              <td>#00ff00</td>
-              <td>(120, 190, 33)</td>
-            </tr>
-            <tr>
-              <td style="background:green;"></td>
-              <td>Green</td>
-              <td>#008000</td>
-              <td>(0, 255, 0)</td>
-            </tr>
-            <tr>
-              <td style="background:aqua;"></td>
-              <td>Aqua</td>
-              <td>#00ffff</td>
-              <td>(0, 255, 255)</td>
-            </tr>
-            <tr>
-              <td style="background:teal;"></td>
-              <td>Teal</td>
-              <td>#008080</td>
-              <td>(0, 128, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:blue;"></td>
-              <td>Blue</td>
-              <td>#0000ff</td>
-              <td>(0, 0, 255)</td>
-            </tr>
-            <tr>
-              <td style="background:navy;"></td>
-              <td>Navy</td>
-              <td>#000080</td>
-              <td>(0, 0, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:pink;"></td>
-              <td>Pink</td>
-              <td>#ffcocb</td>
-              <td>(255, 192, 203)</td>
-            </tr>
-            <tr>
-              <td style="background:purple;"></td>
-              <td>Purple</td>
-              <td>#800080</td>
-              <td>(128, 0, 128)</td>
-            </tr>
-            <tr>
-              <td style="background:fuchsia;"></td>
-              <td>Fuchsia</td>
-              <td>#ff00ff</td>
-              <td>(255, 0, 255)</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-
-        <h2 style="font-weight:500;">HTML Color  Picker</h2>
-        <p>Click the button below to pick a color. It will display the hex value, rgb value and the color in text and  background.</p>
-        <p><b>Note:</b> works best with Chrome Browser.</p>
-        <div style="padding:20px;">
-          <input type="color" value="#000000" id="color" oninput="hex.innerHTML=value; colortext.style.color=value; colorback.style.backgroundColor=value; hexToRgb(color);">
-        </div>
-
-        <div style="width: 100%; padding: 10px; overflow-x: scroll;">
-        <table>
-          <thead>
-            <tr>
-              <th>HEX</th>
-              <th>RGB</th>
-              <th>Text</th>
-              <th>Background</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="hex">#000000</td>
-              <td id="rgb">rgb(0,0,0)</td>
-              <td id="colortext" style="font-weight:800;">Hello World</td>
-              <td id="colorback" style="background-color:black"></td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-
-      </div>
-
-
-        <br>
-        <a href="html-try-it-yourself.html"><button>Try it Yourself&gt;&gt;&gt;</button></a>
       <a href="../quiz/html.html" target="_self"><button>HTML Quiz&gt;&gt;</button></a><br>
         
         <div style="width:100%; display:flex; justify-content:space-between; padding:20px;">
-          <a href="html-7.html"><button class="prev">&lt;&lt; Previous</button></a>
-          <a href="html-9.html"><button class="next">Next &gt;&gt;</button></a>
+          <a href="html-13.html"><button class="prev">&lt;&lt; Previous</button></a>
+          <a href="html-15.html"><button class="next">Next &gt;&gt;</button></a>
           </div>
 
 
