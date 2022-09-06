@@ -7,3 +7,4 @@ const closenav = document.getElementById("w-closenav");
 closenav.onclick = function() {
     document.getElementById("w-sidenav").style.display = "none";
 }
+
